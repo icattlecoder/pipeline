@@ -1,0 +1,94 @@
+module github.com/tektoncd/pipeline
+
+go 1.14
+
+require (
+	cloud.google.com/go v0.43.0
+	contrib.go.opencensus.io/exporter/prometheus v0.1.0
+	contrib.go.opencensus.io/exporter/stackdriver v0.12.4
+	git.apache.org/thrift.git v0.12.0 // indirect
+	github.com/GoogleCloudPlatform/cloud-builders v0.0.0-20190808171733-073e4daa3d0d
+	github.com/aws/aws-sdk-go v1.21.0
+	github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973
+	github.com/census-instrumentation/opencensus-proto v0.2.1
+	github.com/cloudevents/sdk-go v0.0.0-20190509003705-56931988abe3
+	github.com/davecgh/go-spew v1.1.1
+	github.com/dgrijalva/jwt-go v3.2.0+incompatible
+	github.com/evanphx/json-patch v4.1.0+incompatible
+	github.com/ghodss/yaml v1.0.0
+	github.com/gobuffalo/envy v1.6.15
+	github.com/gogo/protobuf v1.2.0
+	github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b
+	github.com/golang/groupcache v0.0.0-20160516000752-02826c3e7903
+	github.com/golang/lint v0.0.0-20180702182130-06c8688daad7 // indirect
+	github.com/golang/protobuf v1.3.2
+	github.com/google/btree v1.0.0
+	github.com/google/go-cmp v0.3.0
+	github.com/google/go-containerregistry v0.0.0-20190320210540-8d4083db9aa0
+	github.com/google/go-github v17.0.0+incompatible
+	github.com/google/go-querystring v1.0.0
+	github.com/google/gofuzz v0.0.0-20161122191042-44d81051d367
+	github.com/google/licenseclassifier v0.0.0-20181010185715-e979a0b10eeb
+	github.com/google/uuid v1.1.1
+	github.com/googleapis/gnostic v0.0.0-20170729233727-0c5108395e2d
+	github.com/gorilla/mux v1.7.2
+	github.com/gregjones/httpcache v0.0.0-20180305231024-9cad4c3443a7
+	github.com/hashicorp/errwrap v1.0.0
+	github.com/hashicorp/go-multierror v1.0.0
+	github.com/hashicorp/golang-lru v0.5.1
+	github.com/imdario/mergo v0.3.7
+	github.com/jmespath/go-jmespath v0.0.0-20180206201540-c2b33e8439af
+	github.com/joho/godotenv v1.3.0
+	github.com/json-iterator/go v0.0.0-20180612202835-f2b4162afba3
+	github.com/knative/test-infra v0.0.0-20190625174906-69af8af1d3fe
+	github.com/markbates/inflect v1.0.4
+	github.com/mattbaird/jsonpatch v0.0.0-20171005235357-81af80346b1a
+	github.com/matttproud/golang_protobuf_extensions v1.0.1
+	github.com/mitchellh/go-homedir v1.1.0
+	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd
+	github.com/modern-go/reflect2 v0.0.0-20180701023420-4b7aa43c6742
+	github.com/mohae/deepcopy v0.0.0-20170929034955-c48cc78d4826
+	github.com/petar/GoLLRB v0.0.0-20130427215148-53be0d36a84c
+	github.com/peterbourgon/diskv v2.0.1+incompatible
+	github.com/pkg/errors v0.8.1
+	github.com/prometheus/client_golang v0.9.3-0.20190127221311-3c4408c8b829
+	github.com/prometheus/client_model v0.0.0-20190129233127-fd36f4220a90
+	github.com/prometheus/common v0.2.0
+	github.com/prometheus/procfs v0.0.0-20190322151404-55ae3d9d5573
+	github.com/rogpeppe/go-internal v1.3.0
+	github.com/sergi/go-diff v1.0.0
+	github.com/spf13/pflag v1.0.3
+	github.com/tektoncd/plumbing v0.0.0-20190625020713-a51e87c5261f
+	go.opencensus.io v0.22.0
+	go.uber.org/atomic v1.3.2
+	go.uber.org/multierr v1.1.0
+	go.uber.org/zap v1.9.2-0.20180814183419-67bc79d13d15
+	golang.org/x/build v0.0.0-20190314133821-5284462c4bec // indirect
+	golang.org/x/crypto v0.0.0-20190605123033-f99c8df09eb5
+	golang.org/x/net v0.0.0-20190628185345-da137c7871d7
+	golang.org/x/oauth2 v0.0.0-20190604053449-0f29369cfe45
+	golang.org/x/sync v0.0.0-20190423024810-112230192c58
+	golang.org/x/sys v0.0.0-20190712062909-fae7ac547cb7
+	golang.org/x/text v0.3.2
+	golang.org/x/time v0.0.0-20190308202827-9d24e82272b4
+	golang.org/x/tools v0.0.0-20190628153133-6cdbf07be9d0
+	golang.org/x/xerrors v0.0.0-20190717185122-a985d3407aa7
+	google.golang.org/api v0.7.0
+	google.golang.org/appengine v1.6.1
+	google.golang.org/genproto v0.0.0-20190716160619-c506a9f90610
+	google.golang.org/grpc v1.22.0
+	gopkg.in/inf.v0 v0.9.1
+	gopkg.in/yaml.v2 v2.2.2
+	k8s.io/api v0.0.0-20190528110122-9ad12a4af326
+	k8s.io/apimachinery v0.0.0-20190221084156-01f179d85dbc
+	k8s.io/client-go v0.0.0-20190528110200-4f3abb12cae2
+	k8s.io/code-generator v0.0.0-20181128191024-b1289fc74931
+	k8s.io/gengo v0.0.0-20190327210449-e17681d19d3a
+	k8s.io/klog v0.2.0
+	k8s.io/kube-openapi v0.0.0-20171101183504-39a7bf85c140
+	k8s.io/kubernetes v1.13.3
+	knative.dev/caching v0.0.0-20190719140829-2032732871ff
+	knative.dev/eventing-contrib v0.6.1-0.20190723221543-5ce18048c08b
+	knative.dev/pkg v0.0.0-20190719141030-e4bc08cc8ded
+	sigs.k8s.io/yaml v1.1.0
+)
