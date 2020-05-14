@@ -16,6 +16,11 @@ limitations under the License.
 
 package main
 
+func main()  {
+	
+}
+
+/*
 import (
 	"context"
 	"flag"
@@ -111,3 +116,4 @@ func main() {
 		logger.Fatal("Error running admission controller", zap.Error(err))
 	}
 }
+*/
